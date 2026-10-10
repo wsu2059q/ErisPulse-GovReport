@@ -85,7 +85,6 @@ async def old_handler(event):
 
 ```toml
 [GovReport]
-enabled = true                  # enable module
 collect_command_calls = true    # collect command executions
 collect_blocked = true          # collect blocked events
 retention_days = 30             # retention days (0 = keep forever)
@@ -96,7 +95,6 @@ theme = "doodle"                  # card style (doodle/editorial)
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `enabled` | bool | `true` | Enable module |
 | `collect_command_calls` | bool | `true` | Collect `command.executed` |
 | `collect_blocked` | bool | `true` | Collect middleware/scope blocks |
 | `retention_days` | int | `30` | Retention days (0 = keep forever; purged on start and daily) |

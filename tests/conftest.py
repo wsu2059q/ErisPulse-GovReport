@@ -42,7 +42,6 @@ async def govbot(make_testbot):
         gov = module_mgr.get("GovReport")
 
         cfg = gov.cfg
-        cfg.enabled = True
         cfg.collect_command_calls = True
         cfg.collect_blocked = True
         cfg.retention_days = 0

@@ -1,16 +1,7 @@
 from ErisPulse.Core.Bases import BaseI18n, I18nKey
 
-
 class GovReportI18n(BaseI18n):
 
-    enabled: I18nKey = I18nKey(
-        default="Enable module",
-        zh_CN="是否启用模块",
-        zh_TW="是否啟用模組",
-        en="Enable module",
-        ja="モジュールを有効化",
-        ru="Включить модуль",
-    )
     collect_command_calls: I18nKey = I18nKey(
         default="Collect command execution records",
         zh_CN="采集命令执行记录（command.executed）",

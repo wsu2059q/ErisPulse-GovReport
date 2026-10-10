@@ -6,13 +6,6 @@ from ErisPulse.Core.Bases import BaseConfig
 @dataclass
 class GovReportConfig(BaseConfig):
 
-    enabled: bool = field(
-        default=True,
-        metadata={
-            "description": {"i18n": "GovReport.enabled", "default": "是否启用模块"},
-            "ui": {"widget": "switch", "group": "basic", "order": 1},
-        },
-    )
     collect_command_calls: bool = field(
         default=True,
         metadata={

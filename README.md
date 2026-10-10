@@ -109,7 +109,6 @@ async def old_handler(event):
 
 ```toml
 [GovReport]
-enabled = true                  # 是否启用模块
 collect_command_calls = true    # 采集命令执行记录
 collect_blocked = true          # 采集拦截记录
 retention_days = 30             # 记录保留天数（0 永久保留）
@@ -120,7 +119,6 @@ theme = "doodle"                  # 卡片风格 (doodle/editorial)
 
 | 配置项 | 类型 | 默认值 | 说明 |
 |--------|------|--------|------|
-| `enabled` | bool | `true` | 是否启用模块 |
 | `collect_command_calls` | bool | `true` | 采集 `command.executed` |
 | `collect_blocked` | bool | `true` | 采集中间件否决与作用域拦截 |
 | `retention_days` | int | `30` | 保留天数（0 永久，启动与每日清理） |

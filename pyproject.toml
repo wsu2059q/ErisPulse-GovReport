@@ -1,6 +1,6 @@
 [project]
 name = "ErisPulse-GovReport"
-version = "0.1.1"
+version = "0.1.2"
 description = "治理观测模块：命令执行/事件拦截/配额消耗统计 —— Governance observability: command execution, blocked-event and usage-quota stats with ORM persistence and Takumi report cards"
 readme = "README.md"
 requires-python = ">=3.10"

@@ -44,7 +44,7 @@ class Main(BaseModule):
         return ModuleMeta(
             name="GovReport",
             description="治理观测模块：采集命令执行与事件拦截记录，输出统计报表与配额消耗",
-            version="0.1.0",
+            version="0.1.2",
             author="ErisPulse-devs",
             group="运维",
             tags=["治理", "统计", "ORM", "观测"],
@@ -52,10 +52,6 @@ class Main(BaseModule):
         )
 
     async def on_load(self, event: dict) -> bool:
-        if not self.cfg.enabled:
-            self.logger.info("治理观测未启用（enabled=false）")
-            return True
-
         await CommandCall.create_table()
         await BlockEvent.create_table()
         await self._stats.purge_expired(self.cfg.retention_days)
