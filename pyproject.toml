@@ -1,0 +1,30 @@
+[project]
+name = "ErisPulse-GovReport"
+version = "0.1.0"
+description = "治理观测模块：采集命令执行与事件拦截记录，输出统计报表与配额消耗"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [ { name = "wsu2059q" } ]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "ErisPulse-Testing",
+]
+
+[project.entry-points."erispulse.module"]
+"GovReport" = "GovReport:Main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["GovReport"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
