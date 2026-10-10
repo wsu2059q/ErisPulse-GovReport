@@ -115,7 +115,7 @@ collect_blocked = true          # 采集拦截记录
 retention_days = 30             # 记录保留天数（0 永久保留）
 top_n = 10                      # 报表单次展示条目数
 render_card = true              # 报表用 Takumi 渲染为卡片
-theme = "auto"                  # 卡片配色 (auto/light/dark)
+theme = "doodle"                  # 卡片风格 (doodle/editorial)
 ```
 
 | 配置项 | 类型 | 默认值 | 说明 |
@@ -126,7 +126,7 @@ theme = "auto"                  # 卡片配色 (auto/light/dark)
 | `retention_days` | int | `30` | 保留天数（0 永久，启动与每日清理） |
 | `top_n` | int | `10` | 报表单次展示条目数 |
 | `render_card` | bool | `true` | 报表渲染为图片卡片 |
-| `theme` | str | `auto` | 卡片配色 |
+| `theme` | str | `doodle` | 卡片风格 (doodle/editorial) |
 
 ---
 

@@ -91,7 +91,7 @@ collect_blocked = true          # collect blocked events
 retention_days = 30             # retention days (0 = keep forever)
 top_n = 10                      # max entries per report
 render_card = true              # render reports as image cards
-theme = "auto"                  # card theme (auto/light/dark)
+theme = "doodle"                  # card style (doodle/editorial)
 ```
 
 | Option | Type | Default | Description |
@@ -102,7 +102,7 @@ theme = "auto"                  # card theme (auto/light/dark)
 | `retention_days` | int | `30` | Retention days (0 = keep forever; purged on start and daily) |
 | `top_n` | int | `10` | Max entries per report |
 | `render_card` | bool | `true` | Render reports as image cards |
-| `theme` | str | `auto` | Card theme |
+| `theme` | str | `doodle` | Card style (doodle/editorial) |
 
 ---
 
